@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Me</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 1000px;
+            padding: 30px;
+            background: transparent;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+        }
+        .image-wrapper {
+            border: 3px solid red;
+            border-radius: 15px;
+            padding: 3px;
+            max-width: 300px;
+            height: auto;
+        }
+        .image-wrapper img {
+            display: block;
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+        }
+        .text {
+            flex: 1;
+            color: white;
+        }
+        .text h1 {
+            color: white;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .text h2 {
+            color: red;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .text p {
+            font-size: 20px;
+            color: #ddd;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: black;
+            color: red;
+            padding: 14px 28px;
+            border: 2px solid red;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="image-wrapper">
+        <img src="file:///C:/Users/Dirk%20Andrei/Downloads/494822654_4015393558675487_6325904647662959500_n.jpg" alt="My Photo" />
+    </div>
+    <div class="text">
+        <h1>About Me</h1>
+        <h2>Front-End Developer & Designer</h2>
+        <p>Hello! I'm a passionate front-end web developer with a love for clean, modern, and interactive web design. 
+        I specialize in creating pixel-perfect layouts and bringing life to websites through thoughtful animations and responsive designs. 
+        I believe that a well-designed website should be both beautiful and functional, ensuring a great experience for every user, no matter what device they use.</p>
+        <button class="btn">Let's Connect</button>
+    </div>
+</div>
+</body>
+</html>

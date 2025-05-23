@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Innovations Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #c00;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        nav {
+            background-color: #c00;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:link {
+            color: #00BFFF;
+        }
+        nav a:visited {
+            color: #9370DB;
+        }
+        nav a:hover {
+            color: #32CD32;
+            text-decoration: underline;
+        }
+        nav a:active {
+            color: #FF4500;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .container {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2, .blog-post h3, .read-more, .sidebar h3 {
+            color: #c00;
+        }
+        .blog-post {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .blog-post p {
+            color: #555;
+        }
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .sidebar ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .subscribe-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #c00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .subscribe-btn:hover {
+            background-color: #900;
+        }
+        .about-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .about-section h3 {
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #c00;
+            padding: 20px;
+            font-size: 14px;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        TESLA INNOVATIONS BLOG
+        <p>Explore the future of electric vehicles, sustainable energy solutions, and cutting-edge technology.</p>
+    </header>
+    <nav>
+        <a onclick="showWelcome()">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Model.html">Models</a>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <h3>The Evolution of Tesla's Electric Vehicles</h3>
+                <p>Tesla’s electric vehicles have changed the way we think about driving. With zero emissions, impressive acceleration, and a sleek design, Tesla is not just a car company—it’s a movement...</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>How Tesla is Leading the Charge in Sustainable Energy</h3>
+                <p>Tesla is more than just a car manufacturer. The company is revolutionizing the way we produce and consume energy. With products like Solar Roof, Powermall, and Gigafactories, Tesla is leading the way toward a cleaner, more sustainable future.</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Tesla's Impact on the Global Market</h3>
+                <p>With its groundbreaking technology, Tesla has reshaped the global automotive industry. From its impact on the electric vehicle market to influencing traditional car manufacturers to accelerate their own electric vehicle development.</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Tesla Quick Facts</h3>
+            <ul>
+                <li>Founded in 2003 by Martin Eberhard & Marc Tarpenning</li>
+                <li>Elon Musk joined shortly after as Chairman</li>
+                <li>First car: Tesla Roadster (2008)</li>
+                <li>Gigafactories worldwide</li>
+                <li>Model S holds safety record in US</li>
+                <li>Tesla’s Autopilot assists in highway driving</li>
+                <li>Tesla's stock skyrocketed in 2020</li>
+                <li>Model 3 is the world’s best-selling EV</li>
+                <li>Tesla Energy supplies Powerwalls for homes</li>
+                <li>Cybertruck pre-orders topped 1.5 million</li>
+            </ul>
+            <a class="subscribe-btn" href="#">Subscribe</a>
+            <div class="about-section">
+                <h3>About Dirk Andrei Carrido</h3>
+                <p>Hello! I'm Dirk Andrei Carrido, a tech enthusiast passionate about electric vehicles and the future of sustainable innovation. I love sharing insights about Tesla’s groundbreaking technology, electric car trends, and clean energy solutions.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tesla Innovations Blog - All rights reserved.</p>
+    </footer>
+<script>
+        function showWelcome() {
+            alert("Welcome to my website!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tesla 4x4 Gallery</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: red;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-container, .video-container {
+      width: 300px;
+      border: 3px solid red;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.03);
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      display: block;
+    }
+
+    .caption {
+      text-align: center;
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tesla 4x4 Gallery</h1>
+
+  <div class="gallery">
+    <!-- Images -->
+    <div class="image-container">
+      <img src="https://pbs.twimg.com/media/GT33n97XEAAnBg9.jpg" alt="Roadster">
+    </div>
+
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/16/f3/8e/16f38e9e8dff0a85091bbd0f2719b9a0.jpg" alt="Cybertruck">
+    </div>
+
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/63/eb/48/63eb48a8cd7e7d2eb44fd95281aa3181.jpg" alt="Model S Blue">
+    </div>
+
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/18/b4/d3/18b4d3d46ee6fe570fd8cd9d93e1c1aa.jpg" alt="Model S Red">
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/tw4jkyfY4HE?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="caption">Roadster</div>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/ILOpnUUIhVI?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="caption">KSA Launch</div>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/_nX8fJshc0U?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="caption">Introducing Model Y</div>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/krQKnhMwxn4?autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="caption">New Model 3 Performance</div>
+    </div>
+  </div>
+
+</body>
+</html>
